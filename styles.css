@@ -1,0 +1,9 @@
+:root { color-scheme: dark; }
+body { margin:0; font-family: Inter, Arial, sans-serif; background:#111; overflow:hidden; }
+#game { display:block; margin:0 auto; background:#1e2a32; border:1px solid #444; }
+.hud, .controls, .shop { position:fixed; left:16px; background:rgba(0,0,0,.6); padding:10px 12px; border-radius:8px; z-index:2; }
+.hud { top:16px; }
+.controls { bottom:16px; max-width:700px; }
+.shop { right:16px; left:auto; top:16px; width:290px; }
+.shop button { width:100%; margin-top:6px; padding:7px; background:#223; color:#fff; border:1px solid #556; cursor:pointer; }
+.shop button:disabled { opacity:.4; cursor:not-allowed; }
