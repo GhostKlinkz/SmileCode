@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tornado Intercept</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hud">
+    <div><strong>Деньги:</strong> $<span id="money">5000</span></div>
+    <div><strong>Машина:</strong> <span id="vehicleName">TIV-1</span> (<span id="vehicleMph">220</span> mph)</div>
+    <div><strong>Скорость:</strong> <span id="speed">0</span> mph</div>
+    <div><strong>Режим:</strong> <span id="mode">Вождение</span></div>
+    <div><strong>Торнадо:</strong> <span id="torInfo">EF1 / 120 mph</span></div>
+  </div>
+
+  <div class="controls">
+    <p>A — назад, D — вперед, J — шипы/якорь, E — бросить приемник, F — вид от первого лица</p>
+    <p>Цель: бросай приемники возле/в торнадо, стой в торнадо в режиме якоря для бонуса, покупай технику.</p>
+  </div>
+
+  <div class="shop" id="shop"></div>
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
